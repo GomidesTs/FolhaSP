@@ -1,0 +1,218 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #2c3e50;
+}
+
+.page {
+  max-width: 36.2rem;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header-pag {
+  background: #3498dd;
+  padding-left: 1.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.header-pag .menu {
+  position: absolute;
+  left: 1.6rem;
+  max-width: 3rem;
+}
+
+header img {
+  max-width: 17.5rem;
+}
+
+main {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding-top: 3.8rem;
+}
+
+.carousel h1 {
+  font-size: 1.6rem;
+}
+.carousel .circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 0 4rem 0;
+}
+.carousel .circles div:nth-child(1) {
+  background: #1d94d3;
+}
+.carousel .circles div {
+  background: #9a9a9a;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin: 0.3rem;
+}
+
+.carousel-card {
+  position: relative;
+}
+.carousel-card img {
+  height: 20.4rem;
+}
+.carousel-card span {
+  position: absolute;
+  left: 0;
+  bottom: 1.4rem;
+  padding: 0.6rem 4.4rem 0.6rem 1.4rem;
+  background: #1d94d3;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  z-index: 1;
+}
+
+.highlights {
+  display: grid;
+  gap: 1.8rem;
+}
+
+.highlights-card {
+  position: relative;
+}
+.highlights-card h2 {
+  position: absolute;
+  left: 0;
+  bottom: 1.6rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+  background: #e2523f;
+  padding: 0.6rem 3rem 0.6rem 1.6rem;
+  z-index: 1;
+}
+
+.new {
+  margin-top: 5rem;
+}
+.new h3 {
+  padding-bottom: 1rem;
+}
+
+.new {
+  display: grid;
+  gap: 2rem;
+}
+
+.new-card {
+  border-bottom: 0.1rem solid #d7d7d7;
+}
+.new-card span {
+  text-transform: uppercase;
+  color: #2e83ba;
+  line-height: 3.5rem;
+}
+
+.summon {
+  margin-top: 3rem;
+  display: grid;
+  gap: 1.6rem;
+}
+.summon h2 {
+  color: #2e83ba;
+}
+
+.summon-card {
+  border-bottom: 0.2rem solid #d7d7d7;
+  padding-bottom: 1rrem;
+}
+.summon-card h3 {
+  font-size: 1rem;
+}
+
+.most {
+  margin-top: 2.8rem;
+}
+.most h2 {
+  color: #e74c3c;
+  padding-bottom: 1.6rem;
+}
+
+.most-card {
+  display: grid;
+  row-gap: 10rem;
+  -moz-column-gap: 1.6rem;
+       column-gap: 1.6rem;
+  grid-template-areas: "A A B" "A A C";
+}
+.most-card img {
+  max-width: 15.9rem;
+  grid-area: A;
+}
+.most-card h3 {
+  grid-area: B;
+  padding-bottom: 1rem;
+  color: #e74c3c;
+}
+.most-card p {
+  grid-area: C;
+}
+
+.publicity {
+  position: relative;
+}
+.publicity span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #c3c5c5;
+}
+.publicity img {
+  padding-top: 2rem;
+}
+
+footer {
+  background: #3498dd;
+  color: #ffffff;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer .top {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.6rem;
+}
+footer .top img {
+  width: 1.5rem;
+}
+footer .copy {
+  padding: 1.6rem;
+  background: #2c3e50;
+}/*# sourceMappingURL=style.css.map */
