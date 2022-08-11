@@ -152,14 +152,13 @@ main {
 .new {
     margin-top: 5rem;
 
+    display: grid;
+
+    gap: 2rem;
+
     h3 {
         padding-bottom: 1rem;
     }
-}
-
-.new {
-    display: grid;
-    gap: 2rem;
 }
 
 .new-card {
@@ -189,6 +188,10 @@ main {
 
     h3 {
         font-size: $font-size-standard;
+    }
+
+    &:last-child {
+        border: none;
     }
 }
 
@@ -268,9 +271,20 @@ footer {
             width: 1.5rem;
         }
     }
+
     .copy {
         padding: 1.6rem;
 
         background: $footer-infor-bg;
     }
 }
+
+.medium {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+@import "partials/layout";
