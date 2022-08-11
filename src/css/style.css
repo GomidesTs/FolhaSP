@@ -117,14 +117,11 @@ main {
 
 .new {
   margin-top: 5rem;
+  display: grid;
+  gap: 2rem;
 }
 .new h3 {
   padding-bottom: 1rem;
-}
-
-.new {
-  display: grid;
-  gap: 2rem;
 }
 
 .new-card {
@@ -151,6 +148,9 @@ main {
 }
 .summon-card h3 {
   font-size: 1rem;
+}
+.summon-card:last-child {
+  border: none;
 }
 
 .most {
@@ -215,4 +215,211 @@ footer .top img {
 footer .copy {
   padding: 1.6rem;
   background: #2c3e50;
+}
+
+.medium {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .page {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  main {
+    max-width: 71.2rem;
+  }
+  .carousel {
+    position: relative;
+  }
+  .carousel h1 {
+    position: absolute;
+    left: 0;
+    bottom: 10rem;
+    color: #ffffff;
+    padding-left: 1.6rem;
+  }
+  .carousel .carousel-card img {
+    height: 43.2rem;
+  }
+  .carousel .carousel-card span {
+    bottom: 6rem;
+    margin-left: 1.6rem;
+  }
+  .highlights {
+    grid-template-areas: "A B C";
+  }
+  .highlights .highlights-card:nth-child(1) {
+    grid-area: A;
+  }
+  .highlights .highlights-card:nth-child(2) {
+    grid-area: B;
+  }
+  .highlights .highlights-card:nth-child(3) {
+    grid-area: C;
+  }
+  .new .wrapper {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: "A B" "C D";
+  }
+  .new .wrapper img {
+    max-width: 34rem;
+    max-height: 18.9rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .new .wrapper .new-card:nth-child(1) {
+    grid-area: A;
+  }
+  .new .wrapper .new-card:nth-child(2) {
+    grid-area: B;
+  }
+  .new .wrapper .new-card:nth-child(3) {
+    grid-area: C;
+  }
+  .new .wrapper .new-card:nth-child(4) {
+    grid-area: D;
+  }
+  .side-news {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: "A B" "C D";
+  }
+  .side-news .publicity {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .side-news .publicity span {
+    top: 5rem;
+  }
+  .medium {
+    display: inline;
+    color: #ffffff;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .redirect {
+    display: flex;
+  }
+  header .redirect .redirect-card {
+    background-color: #d7d7d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  header .redirect .redirect-card img {
+    max-width: 25px;
+    max-height: 25px;
+  }
+  footer .copy {
+    display: flex;
+    gap: 5.1rem;
+    padding: 3rem;
+  }
+  footer .copy img {
+    max-width: 12rem;
+  }
+}
+@media (min-width: 1050px) {
+  .ads-mobile {
+    display: none;
+  }
+  .desktop {
+    display: inline-block;
+  }
+  .page {
+    max-width: 100rem;
+  }
+  main {
+    max-width: 100rem;
+  }
+  .carousel .carousel-card .carousel-img {
+    position: relative;
+  }
+  .carousel .carousel-card .carousel-img .left {
+    width: 5rem;
+    height: 5rem;
+    background: #9a9a9a;
+    position: absolute;
+    border-radius: 50%;
+    left: -2rem;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .carousel .carousel-card .carousel-img .left img {
+    position: absolute;
+    max-width: 3rem;
+    max-height: 3rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .carousel .carousel-card .carousel-img .right {
+    width: 5rem;
+    height: 5rem;
+    background: #9a9a9a;
+    position: absolute;
+    border-radius: 50%;
+    right: -2rem;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .carousel .carousel-card .carousel-img .right img {
+    position: absolute;
+    max-width: 3rem;
+    max-height: 3rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .new {
+    grid-template-areas: "A B E" "C D E";
+  }
+  .new img {
+    width: 34rem;
+    height: 18.9rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .new .new-card:nth-child(1) {
+    grid-area: A;
+  }
+  .new .new-card:nth-child(2) {
+    grid-area: B;
+  }
+  .new .new-card:nth-child(3) {
+    grid-area: D;
+  }
+  .new .new-card:nth-child(4) {
+    grid-area: C;
+  }
+  .new .publicity {
+    grid-area: E;
+  }
+  .new .publicity .publicity-img {
+    height: 50rem;
+  }
+  .new .publicity span {
+    right: 5rem;
+  }
+  .side-news {
+    grid-template-areas: "A B C";
+  }
 }/*# sourceMappingURL=style.css.map */
